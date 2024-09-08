@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> SweetShop.com | Sweets </title>
+<style>
+header{
+width:100%;
+height:50px;
+float:left;
+box-sizing:border-box;
+padding:6px;
+}
+
+body{
+padding:0;
+margin:0;
+}
+
+#brand{
+margin:0;
+padding:0;
+font-family:sans-serif;
+float:left;
+}
+
+#tagline{
+float:right;
+margin:0;
+padding:0;
+margin-top:10px;
+font-family:franklin gothic;
+letter-spacing:1px;
+}
+
+nav{
+width:100%;
+height:100px;
+background-color:blue;
+float:left;
+box-sizing:border-box;
+padding:30px;
+}
+
+#search{
+width:400px;
+height:40px;
+box-sizing:border-box;
+float:left;
+border:none;
+font-size:16px;
+padding:10px;
+}
+
+#search_btn{
+width:100px;
+height:40px;
+box-sizing:border-box;
+float:left;
+border:none;
+margin-left:2px;
+font-size:16px;
+}
+
+#menu{
+width:600px;
+height:40px;
+float:right;
+box-sizing:border-box;
+}
+
+.menus{
+background-color:white;
+text-align:center;
+width:20%;
+}
+
+a{
+text-decoration:none;
+color:black;
+font-family:franklin gothic;
+}
+
+section{
+width:100%;
+height:1620px;
+float:left;
+box-sizing:border-box;
+padding:30px;
+}
+
+#venue{
+float:left;
+}
+
+#phone{
+float:right;
+}
+
+#popular-sweets-box{
+width:720px;
+height:550px;
+float:left;
+box-sizing:border-box;
+background-color:black;
+margin-top:30px;
+padding:25px;
+clear:both;
+}
+
+#popular-sweets-title{
+color:white;
+font-size:30px;
+text-align:center;
+font-family:sans-serif;
+margin:0;
+padding:0;
+}
+
+.popular-sweet-images{
+width:300px;
+height:200px;
+margin:15px;
+border-width:5px;
+border-style:solid;
+border-color:white;
+box-sizing:border-box;
+}
+
+#rate-list{
+width:500px;
+height:550px;
+float:right;
+box-sizing:border-box;
+margin-top:24px;
+}
+
+.sweets-row{
+height:50px;
+background-color:black;
+color:white;
+text-align:center;
+font-family:franklin gothic;
+font-size:25px;
+letter-spacing:1px;
+}
+
+.sweet-column{
+background-color:cyan;
+}
+
+.sweets-list{
+color:white;
+font-family:franklin gothic;
+font-size:22px;
+padding:10px;
+letter-spacing:1px;
+border-bottom-width:2px;
+border-bottom-style:solid;
+border-bottom-color:white;
+margin-left:5px;
+}
+
+.sweets-lists{
+color:white;
+font-family:franklin gothic;
+font-size:22px;
+padding:10px;
+letter-spacing:1px;
+border-bottom-width:2px;
+border-bottom-style:solid;
+border-bottom-color:white;
+}
+
+#sweets-rate{
+list-style:none;
+}
+
+fieldset{
+width:690px;
+height:520px;
+float:left;
+margin-top:30px;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+background-color:#e9ff00;
+}
+
+legend{
+font-family:franklin gothic;
+letter-spacing:1px;
+font-size:30px;
+}
+
+#order-online{
+font-size:17px;
+font-family:sans-serif;
+}
+
+.order-input{
+width:100%;
+height:30px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border:color:#ccc;
+}
+
+textarea{
+width:100%;
+height:100px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+}
+
+#submit{
+padding:10px;
+font-size:15px;
+float:right;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+background-color:#04f95a;
+font-weight:bold;
+color:white;
+}
+
+#about{
+width:500px;
+height:525px;
+float:right;
+margin-top:35px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+padding:20px;
+background-color:#cdffbc;
+}
+
+#about-title{
+text-align:center;
+font-family:franklin gothic;
+letter-spacing:1px;
+font-size:30px;
+}
+
+#about-content{
+text-align:justify;
+line-height:20px;
+font-family:sans-serif;
+}
+
+#sign{
+text-align:right;
+}
+
+#ms-title{
+text-align:center;
+font-family:franklin gothic;
+font-size:30px;
+}
+
+#ms-box{
+width:100%;
+float:left;
+box-sizing:border-box;
+}
+
+#sweets{
+width:250px;
+height:250px;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+float:left;
+margin-right:50px;
+margin-top:30px;
+}
+
+.sweets5{
+width:250px;
+height:250px;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+float:left;
+margin-top:30px;
+}
+
+.sweets-pic{
+width:200px;
+height:150px;
+margin:20px;
+}
+
+.buy-btn{
+padding:10px;
+width:120px;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+background-color:dodgerblue;
+color:white;
+}
+
+footer{
+width:100%;
+height:250px;
+box-sizing:border-box;
+background-color:black;
+float:left;
+}
+
+#contact-us{
+width:450px;
+height:250px;
+box-sizing:border-box;
+float:left;
+padding:10px;
+padding-left:30px;
+}
+
+#social{
+width:370px;
+height:250px;
+box-sizing:border-box;
+float:right;
+}
+
+#contact-title{
+color:white;
+font-family:sans-serif;
+}
+
+.contact-details{
+color:white;
+font-size:20px;
+font-family:sans-serif;
+font-style:normal;
+margin-bottom:10px;
+}
+
+.social-logo{
+width:50px;
+margin-right:15px;
+}
+
+#social-logo{
+width:55px;
+margin-bottom:5px;
+margin-right:15px;
+}
+
+#developer{
+color:white;
+font-family:franklin gothic;
+font-size:17px;
+letter-spacing:1px;
+float:left;
+margin-top:200px;
+margin-left:170px;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1 id="brand"> SweetShop.com </h1>
+<p id="tagline"> The world's largest Sweet and Bakeries shop </p>   
+</header>
+
+<nav>
+<form>
+<input type="search" name="search" placeholder="Search sweets Here" id="search">
+<input type="submit" name="submit" value="Search"id="search_btn">
+</form>
+
+<table id="menu">
+<tr>
+<td class="menus"> <a href="index.html"> Home </a> </td>
+<td class="menus"> <a href="sweets.html"> Sweets </a> </td>
+<td class="menus"> <a href="bakeries.html"> Bakeries </a> </td>
+<td class="menus"> <a href="index.html#about"> About us </a> </td>
+<td class="menus"> <a href="index.html#contact-us"> Contact us </a> </td>
+</tr>
+</table>
+</nav>
+
+<section>
+
+<div id="ms-box">
+<h1 id="ms-title"> More Sweets... </h1>
+</div>
+
+<div id="sweets"> 
+<img src="Images/png/a.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/b.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/c.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/d.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div class="sweets5"> 
+<img src="Images/png/e.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+
+<div id="sweets"> 
+<img src="Images/png/f.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/g.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/h.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/i.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div class="sweets5"> 
+<img src="Images/png/j.png" alt="Sweets-Image" class="sweets-pic"/> 
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+
+<div id="sweets"> 
+<img src="Images/png/k.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/l.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/m.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/n.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div class="sweets5"> 
+<img src="Images/png/o.png" alt="Sweets-Image" class="sweets-pic"/> 
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+
+<div id="sweets"> 
+<img src="Images/png/p.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/q.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/r.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/s.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div class="sweets5"> 
+<img src="Images/png/t.png" alt="Sweets-Image" class="sweets-pic"/> 
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+
+<div id="sweets"> 
+<img src="Images/png/u.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/v.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/w.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div id="sweets"> 
+<img src="Images/png/x.png" alt="Sweets-Image" class="sweets-pic"/>
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+<div class="sweets5"> 
+<img src="Images/png/y.png" alt="Sweets-Image" class="sweets-pic"/> 
+<center>
+<a href="index.html#order-form"> <button class="buy-btn"> Buy Now! </button> </a>
+</center>
+</div>
+</section>
+
+<footer>
+<div id="contact-us">
+<h1 id="contact-title"> Contact Us </h1>
+<address class="contact-details"> Website : SweetShop.com </address>
+<address class="contact-details"> Phone No. : +91 76006 18541 </address>
+<address class="contact-details"> Email Id : SweetShop@gmail.com </address>
+<address class="contact-details"> Address : Bhaskar nagar, Kalwa(E) </address>
+</div>
+<div id="developer"> Developed by : Uneek Developer </div>
+<div id="social">
+<h1 id="contact-title"> Contact Us </h1>
+<a href="https://www.youtube.com/@Uneek_Study"> <img src="Images/social/yt.png" alt="youtube" id="social-logo"/> </a>
+<a href="https://www.facebook.com/people/Uneek-Study/61551612749800/?mibextid=ZbWKwL"> <img src="Images/social/fb.png" alt="facebook" class="social-logo"/> </a>
+<a href="https://www.instagram.com/uneek_study/"> <img src="Images/social/insta.png" alt="instagram" class="social-logo"/> </a>
+<a href="https://x.com/Uneek_Khan?s=08"> <img src="Images/social/x.png" alt="x" class="social-logo"/> </a>
+<a href="https://www.linkedin.com/in/abdulkarimkhan7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <img src="Images/social/in.png" alt="linkedin" class="social-logo"/> </a>
+</div>
+</footer>
+</body>
+</html>
